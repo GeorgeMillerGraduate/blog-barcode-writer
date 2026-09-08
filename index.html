@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Generate and customise QR Code, Micro QR, Data Matrix, Aztec, PDF417 and MaxiCode symbols directly in your browser.">
+
+        <title>2D Code Maker | jenga-code</title>
+
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="header-inner">
+
+                <a class="site-logo" href="../../" aria-label="jenga-code home">
+                    <img class="logo-image" src="../../images/logo.png" alt="jenga-code">
+                </a>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="../../">Home</a>
+                    <a href="../../blog/">Blog</a>
+                    <a class="active" href="../../#projects">Projects</a>
+                    <a href="../../#subjects">Subjects</a>
+                    <a href="../../#about">About</a>
+                    <a href="../../#contact">Contact</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a class="social-link"
+                       href="https://github.com/GeorgeMillerGraduate"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        GH
+                    </a>
+
+                    <a class="social-link" href="#" aria-label="LinkedIn">
+                        in
+                    </a>
+
+                    <a class="social-link" href="../../blog/feed/" aria-label="RSS feed">
+                        RSS
+                    </a>
+
+                    <a class="subscribe-button" href="../../#newsletter">
+                        Subscribe
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="page-shell">
+
+            <section class="home-hero intro">
+                <div class="hero-copy">
+                    <p class="eyebrow">INTERACTIVE ENCODING PROJECT</p>
+
+                    <h1>
+                        2D Code Maker.
+                        <span>Give data a shape.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Turn text, links and data into two-dimensional codes.
+                        Explore six formats, customise their appearance and
+                        export your generated symbols.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="primary-button" href="#workspace">
+                            Create a code <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a class="secondary-button" href="../../blog/">
+                            Read the blog
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <strong>6</strong>
+                            <span>CODE FORMATS</span>
+                        </div>
+                        <div>
+                            <strong>5</strong>
+                            <span>DECORATIVE STYLES</span>
+                        </div>
+                        <div>
+                            <strong>PNG + SVG</strong>
+                            <span>IMAGE EXPORT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-window">
+
+                        <div class="window-header">
+                            <div class="window-dots" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <strong>jenga-code / 2d code maker</strong>
+                            <span>6 FORMATS</span>
+                        </div>
+
+                        <div class="hero-project-grid format-strip" aria-label="Code formats">
+                            <div class="hero-project">
+                                <span aria-hidden="true">▦</span>
+                                <strong>QR Code</strong>
+                                <small>TEXT · LINKS</small>
+                            </div>
+
+                            <div class="hero-project">
+                                <span aria-hidden="true">▣</span>
+                                <strong>Micro QR</strong>
+                                <small>COMPACT SYMBOLS</small>
+                            </div>
+
+                            <div class="hero-project">
+                                <span aria-hidden="true">▥</span>
+                                <strong>Data Matrix</strong>
+                                <small>DATA · IDENTIFIERS</small>
+                            </div>
+
+                            <div class="hero-project">
+                                <span aria-hidden="true">◎</span>
+                                <strong>Aztec</strong>
+                                <small>CONCENTRIC PATTERNS</small>
+                            </div>
+
+                            <div class="hero-project">
+                                <span aria-hidden="true">☷</span>
+                                <strong>PDF417</strong>
+                                <small>STACKED ROWS</small>
+                            </div>
+
+                            <div class="hero-project">
+                                <span aria-hidden="true">⬡</span>
+                                <strong>MaxiCode</strong>
+                                <small>HEXAGONAL MODULES</small>
+                            </div>
+                        </div>
+
+                        <div class="window-footer">
+                            <span>ENCODE</span>
+                            <span>CUSTOMISE</span>
+                            <span>GENERATE</span>
+                            <span>EXPORT</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="application-section" id="workspace">
+
+                <div class="section-intro">
+                    <div>
+                        <p class="eyebrow">INTERACTIVE WORKSPACE</p>
+                        <h2>Make your code.</h2>
+                    </div>
+
+                    <p class="section-copy">
+                        Choose a format, enter your data and generate a symbol.
+                        Adjust the colours or explore decorative rendering.
+                    </p>
+                </div>
+
+                <div class="workspace">
+
+                    <aside class="control-panel">
+
+                        <div class="panel-heading">
+                            <span class="panel-icon">01</span>
+                            <div>
+                                <h2>Code Settings</h2>
+                                <p>Choose what to encode and how.</p>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="format">2D code format</label>
+                            <select id="format">
+                                <option value="qr">QR Code</option>
+                                <option value="microqr">Micro QR</option>
+                                <option value="datamatrix">Data Matrix</option>
+                                <option value="aztec">Aztec Code</option>
+                                <option value="pdf417">PDF417</option>
+                                <option value="maxicode">MaxiCode</option>
+                            </select>
+                        </div>
+
+                        <div class="field-group">
+                            <div class="label-row">
+                                <label for="dataInput">Data to encode</label>
+                                <span id="characterCount">0 characters</span>
+                            </div>
+
+                            <textarea
+                                id="dataInput"
+                                rows="8"
+                                placeholder="Enter text, a URL, identifier or other data..."
+                                ></textarea>
+                        </div>
+
+                        <button id="generateButton" class="generate-button" type="button">
+                            <span>Generate Code</span>
+                            <strong aria-hidden="true">→</strong>
+                        </button>
+
+                        <button id="clearButton" class="secondary-button" type="button">
+                            Clear
+                        </button>
+
+                        <div class="options-grid">
+                            <div class="field-group">
+                                <label for="errorCorrection">Error correction</label>
+                                <select id="errorCorrection">
+                                    <option value="L">Low (L)</option>
+                                    <option value="M" selected>Medium (M)</option>
+                                    <option value="Q">Quartile (Q)</option>
+                                    <option value="H">High (H)</option>
+                                </select>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="moduleSize">Module size</label>
+                                <select id="moduleSize">
+                                    <option value="4">4 px</option>
+                                    <option value="6" selected>6 px</option>
+                                    <option value="8">8 px</option>
+                                    <option value="10">10 px</option>
+                                    <option value="12">12 px</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="options-grid">
+                            <div class="field-group">
+                                <label for="foregroundColor">Foreground</label>
+                                <div class="colour-control">
+                                    <input id="foregroundColor" type="color" value="#0b1930">
+                                    <span id="foregroundHex">#0B1930</span>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="backgroundColor">Background</label>
+                                <div class="colour-control">
+                                    <input id="backgroundColor" type="color" value="#ffffff">
+                                    <span id="backgroundHex">#FFFFFF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class="check-row">
+                            <input id="includeQuietZone" type="checkbox" checked>
+                            <span>
+                                <strong>Include quiet zone</strong>
+                                <small>Recommended blank border around the symbol.</small>
+                            </span>
+                        </label>
+
+                        <section class="fancy-section">
+
+                            <label class="fancy-toggle" for="fancyCode">
+                                <span class="fancy-toggle-copy">
+                                    <span class="fancy-title-row">
+                                        <span class="fancy-icon" aria-hidden="true">✦</span>
+                                        <strong>Fancy Code</strong>
+                                        <span class="experimental-badge">DECORATIVE</span>
+                                    </span>
+
+                                    <small>
+                                        Replace plain modules with an artistic rendering
+                                        while retaining the encoded matrix.
+                                    </small>
+                                </span>
+
+                                <span class="switch">
+                                    <input id="fancyCode" type="checkbox">
+                                    <span class="switch-track">
+                                        <span class="switch-knob"></span>
+                                    </span>
+                                </span>
+                            </label>
+
+                            <div id="fancyOptions" class="fancy-options">
+                                <div class="fancy-divider"></div>
+
+                                <div class="options-grid">
+                                    <div class="field-group">
+                                        <label for="fancyStyle">Module style</label>
+                                        <select id="fancyStyle">
+                                            <option value="organic" selected>Organic</option>
+                                            <option value="rounded">Rounded</option>
+                                            <option value="dots">Dots</option>
+                                            <option value="diamond">Diamonds</option>
+                                            <option value="liquid">Liquid</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field-group">
+                                        <label for="fancyIntensity">Intensity</label>
+                                        <select id="fancyIntensity">
+                                            <option value="subtle">Subtle</option>
+                                            <option value="medium" selected>Medium</option>
+                                            <option value="strong">Strong</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <label class="preserve-row">
+                                    <input id="preservePatterns" type="checkbox" checked>
+                                    <span>
+                                        <strong>Preserve critical patterns</strong>
+                                        <small>Keep structural scanner patterns conservative.</small>
+                                    </span>
+                                </label>
+
+                                <div class="fancy-notice">
+                                    <span class="fancy-notice-icon" aria-hidden="true">i</span>
+                                    <p>
+                                        Decorative rendering changes appearance only.
+                                        Always test exported symbols with a scanner
+                                        before using them publicly.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+
+                    </aside>
+
+                    <section class="preview-panel">
+
+                        <div class="panel-heading preview-heading">
+                            <span class="panel-icon">02</span>
+
+                            <div>
+                                <h2>Generated Symbol</h2>
+                                <p id="previewStatus" role="status" aria-live="polite">
+                                    Enter some data and generate a code.
+                                </p>
+                            </div>
+
+                            <div class="preview-badges">
+                                <span id="fancyBadge" class="fancy-badge" hidden>
+                                    ✦ FANCY
+                                </span>
+                                <span id="formatBadge" class="format-badge">
+                                    QR CODE
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="codeStage" class="code-stage">
+                            <div id="emptyState" class="empty-state">
+                                <div class="sample-code" aria-hidden="true">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+
+                                <h3>Your code will appear here</h3>
+                                <p>
+                                    Generate a conventional code or enable Fancy Code
+                                    to experiment with decorative rendering.
+                                </p>
+                            </div>
+
+                            <canvas id="barcodeCanvas" width="600" height="600" hidden>
+                                Your browser does not support HTML canvas.
+                            </canvas>
+
+                            <div id="svgOutput" hidden></div>
+                        </div>
+
+                        <div class="symbol-details">
+                            <div>
+                                <span>FORMAT</span>
+                                <strong id="detailFormat">QR Code</strong>
+                            </div>
+                            <div>
+                                <span>DIMENSIONS</span>
+                                <strong id="detailDimensions">—</strong>
+                            </div>
+                            <div>
+                                <span>DATA SIZE</span>
+                                <strong id="detailDataSize">0 bytes</strong>
+                            </div>
+                            <div>
+                                <span>STATUS</span>
+                                <strong id="detailStatus">Waiting</strong>
+                            </div>
+                        </div>
+
+                        <div class="download-panel">
+                            <div>
+                                <h3>Export image</h3>
+                                <p>Download the generated symbol for use elsewhere.</p>
+                            </div>
+
+                            <div class="download-actions">
+                                <button id="downloadPngButton" type="button" disabled>
+                                    <span aria-hidden="true">↓</span> Download PNG
+                                </button>
+
+                                <button id="downloadSvgButton" type="button" disabled>
+                                    <span aria-hidden="true">↓</span> Download SVG
+                                </button>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="../../" aria-label="jenga-code home">
+                        <img class="footer-logo" src="../../images/logo.png" alt="jenga-code">
+                    </a>
+                    <p>2D Code Maker — a jenga-code interactive project.</p>
+                </div>
+
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="../../">Home</a>
+                    <a href="../../#projects">Projects</a>
+                    <a href="../../blog/">Blog</a>
+                    <a href="https://github.com/GeorgeMillerGraduate"
+                       target="_blank"
+                       rel="noopener noreferrer">GitHub</a>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+   
+        <script src="js/qr/QRDataEncoder.js"></script>
+        <script src="js/qr/QRErrorCorrection.js"></script>
+        <script src="js/qr/QRMatrix.js"></script>
+        <script src="js/qr/QRMask.js"></script>
+        <script src="js/qr/QRVersion.js"></script>
+        <script src="js/qr/QRGenerator.js"></script>
+
+        <script src="js/microqr/MicroQRDataEncoder.js"></script>
+        <script src="js/microqr/MicroQRErrorCorrection.js"></script>
+        <script src="js/microqr/MicroQRMatrix.js"></script>
+        <script src="js/microqr/MicroQRMask.js"></script>
+        <script src="js/microqr/MicroQRGenerator.js"></script>
+
+        <script src="js/datamatrix/DataMatrixEncoder.js"></script>
+        <script src="js/datamatrix/DataMatrixErrorCorrection.js"></script>
+        <script src="js/datamatrix/DataMatrixPlacement.js"></script>
+        <script src="js/datamatrix/DataMatrixSymbol.js"></script>
+        <script src="js/datamatrix/DataMatrixGenerator.js"></script>
+
+        <script src="js/aztec/AztecEncoder.js"></script>
+        <script src="js/aztec/AztecErrorCorrection.js"></script>
+        <script src="js/aztec/AztecMatrix.js"></script>
+        <script src="js/aztec/AztecLayerManager.js"></script>
+        <script src="js/aztec/AztecGenerator.js"></script>
+
+        <script src="js/pdf417/PDF417Encoder.js"></script>
+        <script src="js/pdf417/PDF417Compaction.js"></script>
+        <script src="js/pdf417/PDF417ErrorCorrection.js"></script>
+        <script src="js/pdf417/PDF417CodewordTable.js"></script>
+        <script src="js/pdf417/PDF417Codeword.js"></script>
+        <script src="js/pdf417/PDF417Matrix.js"></script>
+        <script src="js/pdf417/PDF417Generator.js"></script>
+
+        <script src="js/maxicode/MaxiCodeEncoder.js"></script>
+        <script src="js/maxicode/MaxiCodeErrorCorrection.js"></script>
+        <script src="js/maxicode/MaxiCodeMatrix.js"></script>
+        <script src="js/maxicode/MaxiCodeMode.js"></script>
+        <script src="js/maxicode/MaxiCodeGenerator.js"></script>
+
+        <script src="js/BarcodeRenderer.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
